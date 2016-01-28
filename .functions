@@ -1,3 +1,7 @@
+# For ssh into iD machines
+function sshs { ssh "$1.us-west-2.i.identityaws.net" -t "sudo -i"; }
+export -f sshs
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
