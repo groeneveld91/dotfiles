@@ -1,0 +1,14 @@
+#Heroku
+alias h='heroku'
+
+# Heroku staging
+alias hsc='heroku run rails console --remote staging'
+alias hsl='heroku logs --tail --remote staging'
+alias hsp='watch heroku ps --remote staging'
+alias hsr='heroku releases --remote staging'
+
+# Heroku production
+alias hpc='heroku run rails console --remote production'
+alias hpl='heroku logs --tail --remote production'
+alias hpp='watch heroku ps --remote production'
+alias hpr='heroku releases --remote production'
