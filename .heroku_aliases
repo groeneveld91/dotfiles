@@ -6,9 +6,13 @@ alias hsc='heroku run rails console --remote staging'
 alias hsl='heroku logs --tail --remote staging'
 alias hsp='watch heroku ps --remote staging'
 alias hsr='heroku releases --remote staging'
+alias hsconf='heroku config --remote staging'
+alias hso='heroku open --remote staging'
 
 # Heroku production
 alias hpc='heroku run rails console --remote production'
 alias hpl='heroku logs --tail --remote production'
 alias hpp='watch heroku ps --remote production'
 alias hpr='heroku releases --remote production'
+alias hpconf='heroku config --remote production'
+alias hpo='heroku open --remote production'
