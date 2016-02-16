@@ -1,0 +1,4 @@
+alias cid="cd ~/Projects/Identity"
+alias px="cd ~/Projects/Identity/phoenix"
+alias slyp="cd ~/Projects/Slyp"
+alias dfs="cd ~/Projects/dotfiles"

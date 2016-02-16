@@ -91,8 +91,9 @@ alias pumpitup="osascript -e 'set volume 7'"
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec $SHELL -l"
+# Reload dotfiles and invoke login shell
+alias reload="~/Projects/dotfiles/bootstrap.sh -f; exec $SHELL -l"
 
 # Other alias files
 source ~/.heroku_aliases
+source ~/.project_aliases
