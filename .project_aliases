@@ -1,4 +1,4 @@
 alias cid="cd ~/Projects/Identity"
 alias px="cd ~/Projects/Identity/phoenix"
-alias slyp="cd ~/Projects/Slyp"
+alias slyp="cd ~/Projects/Slyp/slyp"
 alias dfs="cd ~/Projects/dotfiles"
