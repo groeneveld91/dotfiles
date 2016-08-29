@@ -97,3 +97,6 @@ alias reload="~/Projects/dotfiles/bootstrap.sh -f; exec $SHELL -l"
 # Other alias files
 source ~/.heroku_aliases
 source ~/.project_aliases
+
+# Rails aliases
+alias r="rails"
