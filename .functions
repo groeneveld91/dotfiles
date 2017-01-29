@@ -99,3 +99,11 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function count_files() {
+  find ./ -type f | wc -l
+}
+
+function spoof_mac() {
+  sudo ifconfig en0 ether f4:$((RANDOM%10))f:24:07:ee:$((RANDOM%89 + 10))
+}

@@ -1,4 +1,16 @@
-#Add `/usr/local/bin to $PATH
+# Add `/usr/local/bin to $PATH
 export PATH="/usr/local/bin:$PATH";
 
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
+# Add `~/.rvm/bin` to the `$PATH`
 export PATH="$HOME/.rvm/bin:$PATH";
+
+# Add `~/anaconda2/bin` to the `$PATH`
+export PATH="$HOME/anaconda2/bin:$PATH";
+
+# Add `~/anaconda3/bin` to `$PATH`
+# Warning: this breaks brew and other install things
+# so only turn on when absolutely needed
+# export PATH="$HOME/anaconda3/bin:$PATH"
