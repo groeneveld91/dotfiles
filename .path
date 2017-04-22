@@ -10,7 +10,15 @@ export PATH="$HOME/.rvm/bin:$PATH";
 # Add `~/anaconda2/bin` to the `$PATH`
 export PATH="$HOME/anaconda2/bin:$PATH";
 
+# Add qt5
+export PATH="/usr/local/opt/qt5/bin:$PATH"
+
+# Add nvm
+export NVM_DIR="$HOME/.nvm"
+export PATH="$HOME/.nvm/versions/node/v7.8.0/bin:$PATH"
+
 # Add `~/anaconda3/bin` to `$PATH`
 # Warning: this breaks brew and other install things
 # so only turn on when absolutely needed
 # export PATH="$HOME/anaconda3/bin:$PATH"
+

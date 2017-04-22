@@ -106,3 +106,6 @@ source ~/.project_aliases
 
 # Rails aliases
 alias r="rails"
+
+# VLC alias
+alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
