@@ -17,6 +17,9 @@ export PATH="/usr/local/opt/qt5/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.nvm/versions/node/v7.8.0/bin:$PATH"
 
+# Add python executables
+export PATH="$PATH:/Users/groeneveld_james/Library/Python/2.7/bin"
+
 # Add `~/anaconda3/bin` to `$PATH`
 # Warning: this breaks brew and other install things
 # so only turn on when absolutely needed

@@ -109,3 +109,15 @@ alias r="rails"
 
 # VLC alias
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
+
+# Clear 
+alias cl="clear"
+
+#### Project aliases
+
+# Issues quick nav
+alias issues="cd ~/Projects/Issues/"
+
+# Titan quick nav
+alias tit="cd ~/Projects/FirstAmerican/titan/"
+
