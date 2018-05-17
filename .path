@@ -44,4 +44,3 @@ export PATH="$PATH:/Users/groeneveld_james/Library/Python/2.7/bin"
 # Warning: this breaks brew and other install things
 # so only turn on when absolutely needed
 # export PATH="$HOME/anaconda3/bin:$PATH"
-
