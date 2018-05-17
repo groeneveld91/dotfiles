@@ -36,8 +36,15 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Add bash git prompt setup and colors https://github.com/magicmonty/bash-git-prompt
-GIT_PROMPT_ONLY_IN_REPO=1
-source ~/.bash-git-prompt/gitprompt.sh
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then # installed via brew
+  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+else # installed via repo
+  GIT_PROMPT_ONLY_IN_REPO=1
+  source ~/.bash-git-prompt/gitprompt.sh
+fi
+
+
 
 
 # Enable tab completion for vault
