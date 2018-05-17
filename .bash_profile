@@ -53,8 +53,8 @@ complete -C /usr/local/bin/vault vault
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
-# Path to the bash it configuration
-export BASH_IT="/Users/groeneveld_james/.bash_it"
+# Path to the bash_it configuration
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
