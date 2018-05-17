@@ -1,21 +1,41 @@
-# Add `/usr/local/bin to $PATH
+####################
+## Front of PATH ##
+####################
+
+# Add /usr/local/bin to front
 export PATH="/usr/local/bin:$PATH";
 
-# Add `~/bin` to the `$PATH`
+# Add ~/bin to front
 export PATH="$HOME/bin:$PATH";
 
-# Add `~/.rvm/bin` to the `$PATH`
+# Add ~/.rvm/bin to front
 export PATH="$HOME/.rvm/bin:$PATH";
 
-# Add `~/anaconda2/bin` to the `$PATH`
+# Add `~/anaconda2/bin` to front
 export PATH="$HOME/anaconda2/bin:$PATH";
 
+# Add gettext
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# Add qt
+export PATH="/usr/local/opt/qt/bin:$PATH"
+
+# Add TeX
+export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
+
+####################
+### Back of PATH ###
+####################
+
 # Add qt5
-export PATH="/usr/local/opt/qt5/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/qt5/bin"
 
 # Add nvm
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.nvm/versions/node/v7.8.0/bin:$PATH"
+
+# Add go
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
 # Add `~/anaconda3/bin` to `$PATH`
 # Warning: this breaks brew and other install things
