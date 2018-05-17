@@ -37,6 +37,9 @@ export PATH="$HOME/.nvm/versions/node/v7.8.0/bin:$PATH"
 # Add go
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
+# Add python executables
+export PATH="$PATH:/Users/groeneveld_james/Library/Python/2.7/bin"
+
 # Add `~/anaconda3/bin` to `$PATH`
 # Warning: this breaks brew and other install things
 # so only turn on when absolutely needed

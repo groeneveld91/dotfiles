@@ -20,8 +20,24 @@ export LESS_TERMCAP_md="${blue}";
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
 
-# Docker
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/jdg/.docker/machine/machines/dev"
-export DOCKER_MACHINE_NAME="dev"
+# BCGDV Gitlab access token
+export GITLAB_ACCESS_TOKEN=4z3w9qa2d8MpqTxTnFsH
+
+# Vault address
+export VAULT_ADDR='http://127.0.0.1:8200'
+
+# Terraform AWS keys
+export TF_VAR_aws_access_key=`aws configure get aws_access_key_id --profile no.permissions`
+export TF_VAR_aws_secret_key=`aws configure get aws_secret_access_key --profile no.permissions`
+
+# Set git prompt theme
+export GIT_PROMPT_THEME=Minimal
+
+# Default Node env to development
+export NODE_ENV=development
+
+# For SUMO http://sumo.dlr.de/wiki/Installing/MacOS_Build_w_Homebrew
+export CPPFLAGS="$CPPFLAGS -I/opt/X11/include/"
+export LDFLAGS="-L/opt/X11/lib"
+
+export SUMO_HOME="/Users/groeneveld_james/Projects/SmartCity/MobilityHack/sumo"
