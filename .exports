@@ -41,3 +41,5 @@ export CPPFLAGS="$CPPFLAGS -I/opt/X11/include/"
 export LDFLAGS="-L/opt/X11/lib"
 
 export SUMO_HOME="/Users/groeneveld_james/Projects/SmartCity/MobilityHack/sumo"
+
+export VIMRUNTIME="/usr/share/vim/vim80/"
