@@ -113,7 +113,13 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 # Clear 
 alias cl="clear"
 
-#### Project aliases
+### Docker -- courtesy of @listenrightmeow
+alias dq="docker rm -f $(docker ps -aq)"
+alias de="docker exec -it"
+alias dc="docker-compose"
+alias da="dip"
+alias dp="docker ps -aq"
+
 
 ### Project aliases
 

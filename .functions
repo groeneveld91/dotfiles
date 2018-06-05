@@ -107,3 +107,8 @@ function count_files() {
 function spoof_mac() {
   sudo ifconfig en0 ether f4:$((RANDOM%10))f:24:07:ee:$((RANDOM%89 + 10))
 }
+
+# Courtesy of @listenrightmeow
+function dip() {
+  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
+}
