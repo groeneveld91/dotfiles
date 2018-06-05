@@ -115,9 +115,11 @@ alias cl="clear"
 
 #### Project aliases
 
-# Issues quick nav
-alias issues="cd ~/Projects/Issues/"
+### Project aliases
 
 # Titan quick nav
-alias tit="cd ~/Projects/FirstAmerican/titan/"
+alias ttn="cd ~/Projects/FirstAmerican/titan/"
+
+# Titan API docs nav
+alias ttna="cd ~/Projects/FirstAmerican/titan-apidocs-internal"
 
