@@ -7,12 +7,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
+alias rm="rm -i"
 
 # Set colorflag
 colorflag="-G"
@@ -114,18 +111,32 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 alias cl="clear"
 
 ### Docker -- courtesy of @listenrightmeow
-alias dq="docker rm -f $(docker ps -aq)"
+alias dq='docker rm -f $(docker ps -aq)'
 alias de="docker exec -it"
 alias dc="docker-compose"
-alias da="dip"
+alias da="docker ps -a"
 alias dp="docker ps -aq"
+alias dll='docker logs $(docker ps -lq)'
 
+#######################
+### Project aliases ###
+#######################
 
-### Project aliases
-
-# Titan quick nav
+### Endpoint ###
 alias ttn="cd ~/Projects/FirstAmerican/titan/"
-
-# Titan API docs nav
+alias tl="ttn && cd infrastructure/lambda"
 alias ttna="cd ~/Projects/FirstAmerican/titan-apidocs-internal"
+alias tss="ttn && grunt server --stop"
+alias ts="ttn && grunt server"
+
+alias ttv="tl && cd ./tasks-validator/fn/"
+alias trv="tl && cd ./roles-validator/fn/"
+alias tuv="tl && cd ./users-validator/fn/"
+
+alias tece="tl && cd ./echo-executer/fn/"
+alias tee="tl && cd ./email-executer/fn/"
+alias tde="tl && cd ./dynamodb-executer/fn/"
+alias tse="tl && cd ./sms-executer/fn"
+
+alias meow="ssh -i ~/.ssh/andrey_machine endpoint@192.168.0.205"
 

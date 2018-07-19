@@ -6,7 +6,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-for file in ~/.{path,exports,aliases,functions,extra}; do
+# functions goes before aliases
+for file in ~/.{path,exports,functions,aliases,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -36,12 +37,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Add bash git prompt setup and colors https://github.com/magicmonty/bash-git-prompt
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then # installed via brew
-  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
-  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-else # installed via repo
-  GIT_PROMPT_ONLY_IN_REPO=1
-  source ~/.bash-git-prompt/gitprompt.sh
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+	__GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+	source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
 
