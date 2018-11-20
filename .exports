@@ -27,8 +27,8 @@ export GITLAB_ACCESS_TOKEN=4z3w9qa2d8MpqTxTnFsH
 export VAULT_ADDR='http://127.0.0.1:8200'
 
 # Terraform AWS keys
-export TF_VAR_aws_access_key=`aws configure get aws_access_key_id --profile no.permissions`
-export TF_VAR_aws_secret_key=`aws configure get aws_secret_access_key --profile no.permissions`
+export TF_VAR_aws_access_key=`aws configure get aws_access_key_id --profile default`
+export TF_VAR_aws_secret_key=`aws configure get aws_secret_access_key --profile default`
 
 # Set git prompt theme
 export GIT_PROMPT_THEME=Minimal
@@ -43,3 +43,6 @@ export LDFLAGS="-L/opt/X11/lib"
 export SUMO_HOME="/Users/groeneveld_james/Projects/SmartCity/MobilityHack/sumo"
 
 export VIMRUNTIME="/usr/share/vim/vim80/"
+
+export LUNA_REPO_PATH="/Users/groeneveld_james/Projects/luna"
+export LUNA_LIBS_PATH="$LUNA_REPO_PATH/stdlib"

@@ -143,9 +143,12 @@ function fetch_log_merge() {
 ### Localstack || Kinesis | Lambda | SNS | DynamoDB ###
 
 function reload_executer() {
+#	read -p "Please provide a 10 digit phone number to use on local:" phone
+#	read -p "Please provide a valid email to use on local:" email
+
 	delete_lambda "$1Executer"
 	package_lambda "$1Executer"
-	create_lambda "$1Executer" $2
+	create_lambda "$1Executer" $2,LOCAL_PHONE=8317893159,LOCAL_EMAIL=james@endpointclosing.com,NODE_ENV=development
 	subscribe_to_sns_topic "$1Executer" local-events
 }
 
@@ -212,6 +215,10 @@ function unsubscribe_from_sns() {
 
 function list_subscriptions() {
 	awslocal sns list-subscriptions	
+}
+
+function list_functions() {
+	awslocal lambda list-functions
 }
 
 function items_in_table(){

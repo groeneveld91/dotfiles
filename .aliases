@@ -140,3 +140,9 @@ alias tse="tl && cd ./sms-executer/fn"
 
 alias meow="ssh -i ~/.ssh/andrey_machine endpoint@192.168.0.205"
 
+
+### Bailey ###
+alias bex="cd ~/Documents/Egnyte/Shared/Methodology/Other\ Topics/Bailey_X/02\ Bailey_X\ Experts/"
+alias bai="cd ~/Documents/Egnyte/Shared/Methodology/Other\ Topics/Bailey_X/02\ Bailey_X\ Experts/00\ Venture\ setup/Bailey\ AI/"
+alias biot="cd ~/Documents/Egnyte/Shared/Methodology/Other\ Topics/Bailey_X/02\ Bailey_X\ Experts/00\ Venture\ setup/Bailey\ IoT/"
+
